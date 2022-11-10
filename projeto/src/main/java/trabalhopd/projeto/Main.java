@@ -54,3 +54,14 @@ public class Main extends Application {
         launch();
     }
 }
+/*
+*
+*  module trabalhopd.projeto {
+    requires javafx.controls;
+    requires javafx.fxml;
+
+
+    opens trabalhopd.projeto to javafx.fxml;
+    exports trabalhopd.projeto;
+}
+* */
