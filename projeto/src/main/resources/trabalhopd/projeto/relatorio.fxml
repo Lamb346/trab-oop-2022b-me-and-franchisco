@@ -7,9 +7,10 @@
 
 <AnchorPane fx:id="points" prefHeight="768.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trabalhopd.projeto.relatorioController">
    <children>
-      <TreeView layoutX="54.0" layoutY="61.0" prefHeight="426.0" prefWidth="319.0" />
-      <Label fx:id="point1" layoutX="75.0" layoutY="78.0" text="Pontuação:" />
+      <TreeView fx:id="treeview" layoutX="63.0" layoutY="95.0" prefHeight="426.0" prefWidth="319.0" />
+      <Label fx:id="point1" layoutX="82.0" layoutY="61.0" text="Pontuação:" />
       <Button layoutX="751.0" layoutY="729.0" mnemonicParsing="false" onAction="#cancel" text="Exit" />
-      <Label fx:id="point2" layoutX="141.0" layoutY="78.0" text="0" />
+      <Label fx:id="point2" layoutX="141.0" layoutY="61.0" text="0" />
+      <Button layoutX="453.0" layoutY="230.0" mnemonicParsing="false" onAction="#loads" text="Load" />
    </children>
 </AnchorPane>

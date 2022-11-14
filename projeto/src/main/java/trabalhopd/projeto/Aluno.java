@@ -20,4 +20,11 @@ public class Aluno {
         return this.pontuacao;
     }
 
+    public String getturma(){
+        return this.turma;
+    }
+
+    public String getName(){
+        return this.name;
+    }
 }

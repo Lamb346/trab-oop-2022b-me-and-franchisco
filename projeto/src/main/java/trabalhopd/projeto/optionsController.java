@@ -99,7 +99,6 @@ public class optionsController {
 
     }
 
-    private Parent root;
     public void checkpoints(ActionEvent event) throws IOException {
 
         checkpoints2(q1,q2,q3,q4,q5);
@@ -114,15 +113,14 @@ public class optionsController {
         exit();
     }
     public void NextPage(ActionEvent event) throws IOException {
-        FXMLLoader fxmlOptions = new FXMLLoader(Main.class.getResource("relatorio.fxml"));
-        root = fxmlOptions.load();
-        relatorioController relatorioctl = fxmlOptions.getController();
-        relatorioctl.pontuation(alunes);
+        FXMLLoader fxmlconditions = new FXMLLoader(Main.class.getResource("condicao.fxml"));
+        Parent root = fxmlconditions.load();
+        condicaoController condctl = fxmlconditions.getController();
+        condctl.addAT(alunes);
         WINDOWS = (Stage)((Node)event.getSource()).getScene().getWindow();
         relatoryScene = new Scene(root, 800, 600);
         WINDOWS.setScene(relatoryScene);
-        WINDOWS.setTitle("Relatory");
+        WINDOWS.setTitle("Atualização");
         WINDOWS.show();
-        relatorioController.Summ();
     }
 }
