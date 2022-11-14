@@ -12,11 +12,11 @@
         <ToolBar nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
             <items>
                 <Button fx:id="cancelbtn" mnemonicParsing="false" onAction="#cancel" text="Cancel" />
-                <Button fx:id="okbtn" mnemonicParsing="false" onAction="#cancel" text="Ok" />
+                <Button fx:id="okbtn" mnemonicParsing="false" onAction="#checkpoints" text="Ok" />
             </items>
         </ToolBar>
     </bottom>
-   <top>
+    <center>
         <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
             <children>
                 <CheckBox fx:id="q1" layoutX="154.0" layoutY="42.0" mnemonicParsing="false" onAction="#checkBox1" text="Dificuldade Para Prestar Atenção" />
@@ -46,5 +46,5 @@
                 <Label fx:id="teste4" layoutX="160.0" layoutY="25.0" text="1" />
             </children>
         </AnchorPane>
-   </top>
+    </center>
 </BorderPane>
