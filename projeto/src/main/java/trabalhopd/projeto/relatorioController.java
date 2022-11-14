@@ -42,7 +42,6 @@ public class relatorioController {
     }
 */
     public void loads(){
-        if(turmas == null)  System.out.println("krllllll");
         TreeItem<String> tree = new TreeItem<>("Turmas");
         TreeItem<String> branch;
         TreeItem<String> leaf;

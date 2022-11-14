@@ -23,7 +23,6 @@ public class condicaoController {
     public void addAT(Aluno al){
         boolean turm = false;
         if(turmas == null){
-            System.out.println("putaaaaaaaaaaaaaaa");
             qturmas = 0;
             turmas = new ArrayList<Turma>();
         }
